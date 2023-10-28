@@ -27,48 +27,42 @@ public class ATMExample
             switch(choice)  
             {  
                 case 1:  
-        System.out.print("\n\n 		Enter money to be withdrawn:");  
-                      
-        //get the withdrawl money from user  
-        withdraw = sc.nextInt();  
-                      
-        //check whether the balance is greater than or equal to the withdrawal amount  
-        if(balance >= withdraw)  
-        {  
-            //remove the withdrawl amount from the total balance  
-            balance = balance - withdraw;  
-            System.out.println(" 		Please collect your money");  
-        }  
-        else  
-        {  
-            //show custom error message   
-            System.out.println(" 		Insufficient Balance");  
-        }  
-        System.out.println("");  
-        break;  
+                          System.out.print("\n\n 		Enter money to be withdrawn:");  
+                          withdraw = sc.nextInt();  
+                          //check whether the balance is greater than or equal to the withdrawal amount  
+                         if(balance >= withdraw)  
+                         {  
+                                //remove the withdrawl amount from the total balance  
+                                balance = balance - withdraw;  
+                                System.out.println(" 		Please collect your money");  
+                         }  
+                          else  
+                        {  
+                                //show custom error message   
+                                System.out.println(" 		Insufficient Balance");  
+                        }  
+                        System.out.println("");  
+                        break;  
    
                 case 2:  
-                      
-        System.out.print("\n\n 		Enter money to be deposited:");  
-                      
-        //get deposite amount from te user  
-        deposit = sc.nextInt();  
-                      
-        //add the deposit amount to the total balanace  
-        balance = balance + deposit;  
-        System.out.println("Your Money has been successfully depsited");  
-        System.out.println("");  
-        break;  
+                        System.out.print("\n\n 		Enter money to be deposited:");  
+                        //get deposite amount from te user  
+                        deposit = sc.nextInt();  
+                        //add the deposit amount to the total balanace  
+                        balance = balance + deposit;  
+                        System.out.println("Your Money has been successfully depsited");  
+                        System.out.println("");  
+                        break;  
    
-                case 3:  
-        //displaying the total balance of the user  
-        System.out.println("\n\n 		Balance : "+balance);  
-        System.out.println("");  
-        break;  
+                  case 3:  
+                        //displaying the total balance of the user  
+                        System.out.println("\n\n 		Balance : "+balance);  
+                        System.out.println("");  
+                        break;  
    
                 case 4:  
-        //exit from the menu  
-        System.exit(0);  
+                        //exit from the menu  
+                        System.exit(0);  
             }  
         }  
     }  
